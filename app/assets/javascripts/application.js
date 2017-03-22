@@ -12,5 +12,13 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require bootstrap-sprockets
+//= require chosen
 //= require turbolinks
 //= require_tree .
+$(document).on('ready page:load', function () {
+  $('#product_tag_ids').chosen({
+    allow_single_deselect: true,
+    width: '30%'
+  })
+});
